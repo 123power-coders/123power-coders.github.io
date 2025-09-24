@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 15px;
+      border: 1px solid #000;
+    }
+    .buttons {
+      margin: 20px 0;
+    }
+    button {
+      width: 60px;
+      height: 40px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    #container {
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      background-color: steelblue; /* default blue */
+      border: 1px solid #000;
+    }
+    footer {
+      margin-top: 20px;
+      border: 1px solid #000;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WELCOME to Color SITE</h1>
+  </header>
+
+  <div class="buttons">
+    <button style="background-color: gold;" onclick="changeColor('gold')"></button>
+    <button style="background-color: darkorange;" onclick="changeColor('darkorange')"></button>
+    <button style="background-color: green;" onclick="changeColor('green')"></button>
+    <button style="background-color: red;" onclick="changeColor('red')"></button>
+  </div>
+
+  <div id="container"></div>
+
+  <script>
+    function changeColor(color) {
+      document.getElementById('container').style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
